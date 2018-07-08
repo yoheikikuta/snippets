@@ -9,8 +9,13 @@ RUN pip install \
     jupyter \
     numpy \
 	pillow \
-	tensorflow \
-	keras
+	tensorflow==1.8.0
+
+WORKDIR /
+RUN git clone https://github.com/keras-team/keras.git && \
+    git clone https://github.com/keras-team/keras-applications.git
+RUN cd keras && python setup.py install
+RUN cd keras-applications && python setup.py install
 
 WORKDIR /work
 
