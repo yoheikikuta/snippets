@@ -9,8 +9,8 @@ RUN pip install \
     jupyter \
     numpy \
     pillow \
+    matplotlib \
     tensorflow==1.8.0
-
 
 WORKDIR /work
 
