@@ -14,4 +14,4 @@ RUN pip install \
 
 WORKDIR /work
 
-ENTRYPOINT ["/bin/bash"]""]
+ENTRYPOINT ["/bin/bash"]
